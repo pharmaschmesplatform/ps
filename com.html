@@ -777,6 +777,10 @@
                 white-space: normal !important;
             }
 
+            .scroll-indicator {
+                bottom: 5rem; /* MODIFIED: Increased bottom value */
+            }
+
             .platforms-grid,
             .events-grid {
                 grid-template-columns: 1fr;
@@ -954,6 +958,19 @@
                     </div>
                 </div>
 
+                <!-- MODIFIED: TikTok card is now active and placed before Twitter -->
+                <div class="platform-card tiktok fade-in">
+                    <i class="fab fa-tiktok platform-icon"></i>
+                    <h3 class="platform-title">TikTok</h3>
+                    <div class="platform-links">
+                        <a href="https://www.tiktok.com/@pharmaschemes_?_t=ZS-8yPNX0Ty1UG&_r=1" target="_blank" rel="noopener noreferrer" class="platform-link">
+                            <i class="fas fa-video"></i>
+                            <span>Follow Us on TikTok</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MODIFIED: Twitter card is now the last item -->
                 <div class="platform-card twitter fade-in">
                     <i class="fab fa-twitter platform-icon"></i>
                     <h3 class="platform-title">X (Twitter)</h3>
@@ -961,17 +978,6 @@
                         <a href="https://x.com/Pharma_schemes?t=tYH7625pn5Ny46Sk7EVlww&s=09" target="_blank" rel="noopener noreferrer" class="platform-link">
                             <i class="fas fa-bell"></i>
                             <span>Follow for Updates</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="platform-card tiktok disabled fade-in">
-                    <i class="fab fa-tiktok platform-icon"></i>
-                    <h3 class="platform-title">TikTok</h3>
-                    <div class="platform-links">
-                        <a href="#" class="platform-link">
-                            <i class="fas fa-clock"></i>
-                            <span class="disabled-text">Coming Soon</span>
                         </a>
                     </div>
                 </div>
