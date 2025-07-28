@@ -34,8 +34,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        /* MODIFIED: The key fix for horizontal overflow on mobile */
+        
         html { 
             scroll-behavior: smooth; 
             overflow-x: hidden;
@@ -45,7 +44,7 @@
             font-family: 'Inter', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            overflow-x: hidden; /* Kept for redundant safety */
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             cursor: none;
         }
@@ -224,7 +223,8 @@
             .hero-title-mobile {
                 display: block;
                 font-family: 'Poppins', sans-serif;
-                font-size: clamp(3rem, 12vw, 4.5rem);
+                /* MODIFIED: Adjusted font size to be more flexible on small screens */
+                font-size: clamp(2.2rem, 10vw, 4.5rem);
                 font-weight: 900;
                 line-height: 1.1;
                 margin-bottom: 1.5rem;
