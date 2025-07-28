@@ -223,16 +223,14 @@
             .hero-title-mobile {
                 display: block;
                 font-family: 'Poppins', sans-serif;
-                /* MODIFIED: Final robust values to ensure perfect fit */
-                font-size: clamp(2rem, 10vw, 4rem);
+                /* MODIFIED: Final definitive fix for single-line title on mobile */
+                font-size: clamp(1.8rem, 8vw, 4rem);
                 font-weight: 900;
                 line-height: 1.1;
                 margin-bottom: 1.5rem;
                 color: var(--brand-primary);
                 animation: pulse-glow 3s infinite ease-in-out;
                 text-align: center;
-                /* MODIFIED: The definitive fix for overflow */
-                overflow-wrap: break-word;
             }
 
             .scroll-indicator { bottom: 5rem; }
